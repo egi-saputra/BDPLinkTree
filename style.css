@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 100vh;
+  margin: 20px auto;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile > img {
+  width: 150px;
+  height: 150px;
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  border-radius: 100%;
+}
+
+.profile > p {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.profile > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  /* text-transform: uppercase; */
+  /* font-weight: 500; */
+}
+
+.profile > a:hover {
+  text-decoration: none;
+  color: #ffff;
+  text-align: center;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.link > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.link > a:hover {
+  text-decoration: none;
+  color: #eaeaea;
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #0ea5e9;
+  background-color: #0ea5e9;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer > p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer > p {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+  }
+  .link > a {
+    width: 290px;
+  }
+}
